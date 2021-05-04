@@ -1,0 +1,32 @@
+version: '2'
+services:
+    apache:
+        image: 'bitnami/apache:latest'
+        ports:
+            - '80:8080'
+        volumes:
+            - ./html:/var/www/html
+    jenkins:
+        image: 'jenkins/jenkins:lts'
+        container_name: 'jenkins'
+        # labels:
+            # kompose.service.type: nodeport
+        ports:
+            - '8080:8080'
+            - '443:8443'
+            - '50000:50000'
+        volumes:
+            - ./jenkins_home:/var/jenkins_home
+            - ./jen_logs:/var/logs
+            - ./html:/var/www/html
+            # - ./jenkins:/var/jenkins_config
+
+volumes:
+    html:
+        driver: local
+    jenkins_home:
+        driver: local
+    jenkins_logs:
+        driver: local
+    # jenkins:
+        # driver: local

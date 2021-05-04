@@ -1,0 +1,23 @@
+Started by user [8mha:////4PgB2oPgWyQcSH9X6SR3/jbJ/MXvNDF2FpsKxd3Rhn2AAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freetest
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/freetest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hugotms/b3_mspr_java.git # timeout=10
+Fetching upstream changes from https://github.com/hugotms/b3_mspr_java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/hugotms/b3_mspr_java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 8c2ac432525cad529a0005da97e516db60fa3cc5 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8c2ac432525cad529a0005da97e516db60fa3cc5 # timeout=10
+Commit message: "Delete .DS_Store"
+ > git rev-list --no-walk 8c2ac432525cad529a0005da97e516db60fa3cc5 # timeout=10
+[freetest] $ /bin/sh -xe /tmp/jenkins1377085231831087597.sh
++ mvn -v
+/tmp/jenkins1377085231831087597.sh: 2: /tmp/jenkins1377085231831087597.sh: mvn: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

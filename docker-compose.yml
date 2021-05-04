@@ -17,8 +17,8 @@ services:
             - '443:8443'
             - '50000:50000'
         volumes:
-            # - ./jenkins_home:/var/jenkins_home
-            - ./jenkins_jobs:/var/jenkins_home/jobs
+            - ./jenkins_home:/var/jenkins_home
+            # - ./jenkins_jobs:/var/jenkins_home/jobs
             # - ./jenkins_logs:/var/logs
             - ./html:/var/www/html
             # - ./jenkins:/var/jenkins_config

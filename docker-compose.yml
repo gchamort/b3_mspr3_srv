@@ -17,7 +17,7 @@ services:
             - '50000:50000'
         volumes:
             - ./jenkins_home:/var/jenkins_home
-            - ./jen_logs:/var/logs
+            - ./jenkins_logs:/var/logs
             - ./html:/var/www/html
             # - ./jenkins:/var/jenkins_config
 

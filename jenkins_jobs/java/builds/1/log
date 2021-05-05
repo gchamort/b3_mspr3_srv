@@ -1,0 +1,54 @@
+Started by user [8mha:////4MeSQbJHXuyyS/Glid27lIyGHv+VGc5xE+nrIfLgiz+CAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/java/workspace
+Unpacking https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz to /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/MVN381 on Jenkins
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/hugotms/b3_mspr_java.git
+ > git init /var/jenkins_home/jobs/java/workspace # timeout=10
+Fetching upstream changes from https://github.com/hugotms/b3_mspr_java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/hugotms/b3_mspr_java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/hugotms/b3_mspr_java.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c3a847a3969e49071b43918439594e7cec9df65a (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c3a847a3969e49071b43918439594e7cec9df65a # timeout=10
+Commit message: "Merge pull request #29 from hugotms/5"
+First time build. Skipping changelog.
+ERROR: Processing failed due to a bug in the code. Please report this to the issue tracker (https://jenkins.io/redirect/report-an-issue).
+java.lang.IllegalArgumentException: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/MVN381 doesn't have a 'lib' subdirectory - thus cannot be a valid maven installation!
+	at hudson.maven.MavenEmbedderUtils.buildClassRealm(MavenEmbedderUtils.java:85)
+	at hudson.maven.MavenEmbedderUtils.getMavenVersion(MavenEmbedderUtils.java:194)
+	at hudson.maven.MavenEmbedderUtils.getMavenVersion(MavenEmbedderUtils.java:185)
+	at hudson.maven.MavenVersionCallable.call(MavenVersionCallable.java:69)
+	at hudson.maven.MavenVersionCallable.call(MavenVersionCallable.java:41)
+	at hudson.FilePath.act(FilePath.java:1251)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:639)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:513)
+	at hudson.model.Run.execute(Run.java:1907)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+project=hudson.maven.MavenModuleSet@679aabe2[java]
+project.getModules()=[]
+project.getRootModule()=null
+FATAL: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/MVN381 doesn't have a 'lib' subdirectory - thus cannot be a valid maven installation!
+java.lang.IllegalArgumentException: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/MVN381 doesn't have a 'lib' subdirectory - thus cannot be a valid maven installation!
+	at hudson.maven.MavenEmbedderUtils.buildClassRealm(MavenEmbedderUtils.java:85)
+	at hudson.maven.MavenEmbedderUtils.getMavenVersion(MavenEmbedderUtils.java:194)
+	at hudson.maven.MavenEmbedderUtils.getMavenVersion(MavenEmbedderUtils.java:185)
+	at hudson.maven.MavenVersionCallable.call(MavenVersionCallable.java:69)
+	at hudson.maven.MavenVersionCallable.call(MavenVersionCallable.java:41)
+	at hudson.FilePath.act(FilePath.java:1251)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:639)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:513)
+	at hudson.model.Run.execute(Run.java:1907)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:543)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

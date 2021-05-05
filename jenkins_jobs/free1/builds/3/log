@@ -1,0 +1,23 @@
+Started by user [8mha:////4MeSQbJHXuyyS/Glid27lIyGHv+VGc5xE+nrIfLgiz+CAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9ovz8EgDKVWzSvwAAAA==[0mroot
+Running as SYSTEM
+Building in workspace /var/jenkins_home/jobs/free1/workspace
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/jobs/free1/workspace/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/hugotms/b3_mspr_java.git # timeout=10
+Fetching upstream changes from https://github.com/hugotms/b3_mspr_java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.20.1'
+ > git fetch --tags --force --progress -- https://github.com/hugotms/b3_mspr_java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c3a847a3969e49071b43918439594e7cec9df65a (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c3a847a3969e49071b43918439594e7cec9df65a # timeout=10
+Commit message: "Merge pull request #29 from hugotms/5"
+ > git rev-list --no-walk c3a847a3969e49071b43918439594e7cec9df65a # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins3384030610161057846.sh
++ mvn clean install
+/tmp/jenkins3384030610161057846.sh: 2: /tmp/jenkins3384030610161057846.sh: mvn: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
